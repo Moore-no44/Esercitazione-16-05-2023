@@ -20,8 +20,6 @@ class IsoTriangle : public Polygon
 
 
 protected:
-	float perimeter;
-	float area;
 
 	float base;
 	float height;
@@ -34,12 +32,13 @@ protected:
 
 
 
+
 public:
 
 
 	/// Default constructor
 	IsoTriangle();
-	
+
 
 	/// Copy constructor
 	IsoTriangle(IsoTriangle& origin);
@@ -52,12 +51,13 @@ public:
 
 	/// Diagnostic printout
 	void Dump();
-	
 
+	float GetArea();
+	float GetPerimeter();
 	float GetSide();
 
 	void Draw();
-	
+
 };
 
 
