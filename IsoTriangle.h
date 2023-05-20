@@ -16,20 +16,17 @@
 
 class IsoTriangle : public Polygon
 {
-	//friend ostream& operator << (ostream& out, Foglia& X);
-
-
 protected:
 
 	float base;
 	float height;
 
-	/// Function to print area
+	/// Function to calculate area
 	float Area();
-
-	/// Function to print perimeter
+	
+	/// Function to calculate perimeter
 	float Perimeter();
-
+	
 
 
 
@@ -38,10 +35,10 @@ public:
 
 	/// Default constructor
 	IsoTriangle();
-
+	
 
 	/// Copy constructor
-	IsoTriangle(IsoTriangle& origin);
+	IsoTriangle(const IsoTriangle& r);
 
 	/// Destructor
 	~IsoTriangle();
@@ -49,15 +46,39 @@ public:
 	/// Init constructor
 	IsoTriangle(float b, float h);
 
-	/// Diagnostic printout
-	void Dump();
+	
+
+
+	void SetBase(float b);
+	void SetHeight(float h);
+	void SetDim(float b, float h);
+
+
+	float GetBase();
+	float GetHeight();
+	void GetDim(float& b, float& h);
+	float GetSide();
 
 	float GetArea();
 	float GetPerimeter();
-	float GetSide();
+
+	/// Diagnostic printout
+	void Dump();
+	
+	
+
+
+	void WarningMessage(const char* string);
+	void ErrorMessage(const char* string);
+
+	void Reset();
+	void Init(const IsoTriangle& r);
+	void Init();
+
+	
 
 	void Draw();
-
+	
 };
 
 

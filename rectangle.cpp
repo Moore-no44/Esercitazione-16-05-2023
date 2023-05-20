@@ -231,10 +231,10 @@ void Rectangle::Dump() {
 
 
 void Rectangle::Draw() {
-	cout << "\n\nsto calcolando i valori del rettangolo" << endl;
+	cout << "sto calcolando i valori del rettangolo " << endl;
 
-	cout << "Area: \n" << GetArea() << endl;
+	cout << "Area: " << GetArea() << endl;
 
-	cout << "Perimeter: \n" << GetPerimeter() << endl;
+	cout << "Perimeter: " << GetPerimeter() << endl;
 
 }
