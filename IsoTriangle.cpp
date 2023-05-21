@@ -1,7 +1,8 @@
 /**
+* @file IsoTriangle.cpp
 * @author Travi Lorenzo
 * @author Tomaghelli Moreno
-*
+* @brief implementation of class IsoTriangle functions
 *
 */
 
@@ -115,13 +116,16 @@ void IsoTriangle::Dump() {
 
 
 
-
-/// Function to print perimeter
+/// @brief calculate the perimeter of the object
+/// @return perimeter of the triangle
 
 float IsoTriangle::Perimeter() {
 
 	return ( base + 2 * GetSide());
 }
+
+/// @brief calculate the area of the object
+/// @return area of the triangle
 
 float IsoTriangle::Area() {
 
@@ -132,7 +136,7 @@ float IsoTriangle::Area() {
 
 
 /// @brief get the perimeter of the object
-/// @return perimeter of the rectangle
+/// @return perimeter of the triangle
 float IsoTriangle::GetPerimeter() {
 
 	return Perimeter();
@@ -142,7 +146,7 @@ float IsoTriangle::GetPerimeter() {
 
 
 /// @brief get the area of the object
-/// @return area of the rectangle
+/// @return area of the triangle
 float IsoTriangle::GetArea() {
 
 	return Area();

@@ -67,8 +67,10 @@ public:
 	void Dump();
 	/// @}
 
+	/// @name DRAWING
+	/// @{
 	void Draw();
-
+	/// @}
 };
 
 #endif

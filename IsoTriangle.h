@@ -8,11 +8,8 @@
 
 #include "polygon.h"
 
-/**
-* @class	Isotriangle
-	@brief	element of triangle isoscele
-*
-*/
+/// @class IsoTriangle
+/// @brief element of triangle isoscele
 
 class IsoTriangle : public Polygon
 {
@@ -32,7 +29,8 @@ protected:
 
 public:
 
-
+	/// @name CONSTRUCTORS/DESTRUCTOR
+	/// @{
 	/// Default constructor
 	IsoTriangle();
 	
@@ -45,42 +43,52 @@ public:
 
 	/// Init constructor
 	IsoTriangle(float b, float h);
-
+	/// @}
 	
 
-
+	/// @name SETTER
+	/// @{
 	void SetBase(float b);
 	void SetHeight(float h);
 	void SetDim(float b, float h);
+	/// @}
 
 
+	/// @name GETTERS
+	/// @{
 	float GetBase();
 	float GetHeight();
 	void GetDim(float& b, float& h);
 	float GetSide();
-
 	float GetArea();
 	float GetPerimeter();
+	/// @}
 
+
+	/// @name DEBUG and SERIALIZATION
+	/// @{
 	/// Diagnostic printout
 	void Dump();
-	
-	
-
-
 	void WarningMessage(const char* string);
 	void ErrorMessage(const char* string);
+	/// @}
 
+
+	
+
+	/// @name BASIC HANDLING
+	/// @{
 	void Reset();
 	void Init(const IsoTriangle& r);
 	void Init();
-
+	/// @}
 	
-
+	/// @name DRAWING
+	/// @{
 	void Draw();
-	
+	/// @}
 };
 
 
-#endif // !ISOTRIANGLE_DEF__
+#endif
 

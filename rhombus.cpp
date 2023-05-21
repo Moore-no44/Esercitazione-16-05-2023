@@ -189,20 +189,23 @@ float Rhombus::GetSide() {
 	return Side();
 }
 
+/// @brief calculate the area of the Rhombus
+/// @return area of the Rhombus
 float Rhombus::Area() {
 
 	return (diagH * diagV)/2;
 
 }
 
-
+/// @brief calculate perimeter of the Rhombus
+/// @return perimeter of the Rhombus
 float Rhombus::Perimeter() {
 
 	return 4* GetSide();
 }
 
-
-
+/// @brief calculate the side of the Rhombus
+/// @return side of the Rhombus
 float Rhombus::Side() {
 
 	return sqrt(pow(diagH / 2, 2) + pow(diagV / 2, 2));
@@ -242,7 +245,7 @@ void Rhombus::Dump() {
 
 }
 
-
+/// @brief simulate the drawing of the rhombus
 void Rhombus::Draw() {
 	cout << "sto calcolando i valori del rombo " << endl;
 
