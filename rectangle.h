@@ -12,7 +12,7 @@ using namespace std;
 
 /// @class Rectangle
 /// @brief to manage an object with the shape of a rectangle
-class Rectangle: public Polygon
+class Rectangle : public Polygon
 {
 private:
 	float length;

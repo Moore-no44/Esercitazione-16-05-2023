@@ -26,7 +26,7 @@ Rectangle::Rectangle(float w, float l) {
 
 	cout << "Rectangle - constructor" << endl;
 
-	if (w <= 0.) 
+	if (w <= 0.)
 	{
 		cout << "WARNING: Rectangle - constructor: width should be > 0" << endl;
 		width = 0;
@@ -37,7 +37,7 @@ Rectangle::Rectangle(float w, float l) {
 	if (l <= 0.) {
 		cout << "WARNING: Rectangle - constructor: length should be > 0" << endl;
 		length = 0;
-		}
+	}
 	else
 		length = l;
 

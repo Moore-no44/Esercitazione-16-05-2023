@@ -20,10 +20,10 @@ protected:
 
 	/// Function to calculate area
 	float Area();
-	
+
 	/// Function to calculate perimeter
 	float Perimeter();
-	
+
 
 
 
@@ -33,7 +33,7 @@ public:
 	/// @{
 	/// Default constructor
 	IsoTriangle();
-	
+
 
 	/// Copy constructor
 	IsoTriangle(const IsoTriangle& r);
@@ -44,7 +44,7 @@ public:
 	/// Init constructor
 	IsoTriangle(float b, float h);
 	/// @}
-	
+
 
 	/// @name SETTER
 	/// @{
@@ -74,7 +74,7 @@ public:
 	/// @}
 
 
-	
+
 
 	/// @name BASIC HANDLING
 	/// @{
@@ -82,7 +82,7 @@ public:
 	void Init(const IsoTriangle& r);
 	void Init();
 	/// @}
-	
+
 	/// @name DRAWING
 	/// @{
 	void Draw();
@@ -91,4 +91,3 @@ public:
 
 
 #endif
-

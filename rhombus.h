@@ -12,7 +12,7 @@ using namespace std;
 
 /// @class Rhombus
 /// @brief to manage an object with the shape of a rhombus
-class Rhombus: public Polygon
+class Rhombus : public Polygon
 {
 private:
 	float diagH;
@@ -54,7 +54,7 @@ public:
 	float GetDiagH();
 	float GetDiagV();
 	float GetSide();
-	
+
 
 	float GetArea();
 	float GetPerimeter();

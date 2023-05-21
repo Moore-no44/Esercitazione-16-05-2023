@@ -193,7 +193,7 @@ float Rhombus::GetSide() {
 /// @return area of the Rhombus
 float Rhombus::Area() {
 
-	return (diagH * diagV)/2;
+	return (diagH * diagV) / 2;
 
 }
 
@@ -201,7 +201,7 @@ float Rhombus::Area() {
 /// @return perimeter of the Rhombus
 float Rhombus::Perimeter() {
 
-	return 4* GetSide();
+	return 4 * GetSide();
 }
 
 /// @brief calculate the side of the Rhombus

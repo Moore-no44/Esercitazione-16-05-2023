@@ -112,21 +112,27 @@ void IsoTriangle::Dump() {
 
 }
 
+/// @brief diagnostic function
+void IsoTriangle::Draw() {
+	cout << "sto calcolando i valori del triangolo" << endl;
 
+	cout << "Area: " << GetArea() << endl;
+
+	cout << "Perimeter: " << GetPerimeter() << endl;
+
+}
 
 
 
 /// @brief calculate the perimeter of the object
 /// @return perimeter of the triangle
-
 float IsoTriangle::Perimeter() {
 
-	return ( base + 2 * GetSide());
+	return (base + 2 * GetSide());
 }
 
 /// @brief calculate the area of the object
 /// @return area of the triangle
-
 float IsoTriangle::Area() {
 
 	return (base * height) / 2;
@@ -153,15 +159,7 @@ float IsoTriangle::GetArea() {
 
 }
 
-void IsoTriangle::Draw() {
-	cout << "sto calcolando i valori del triangolo" << endl;
 
-	cout << "Area: " << GetArea() << endl;
-
-	cout << "Perimeter: " << GetPerimeter() << endl;
-
-	//cout << "id: \n" << GetId() << endl;
-}
 
 
 
@@ -185,8 +183,8 @@ void IsoTriangle::WarningMessage(const char* string) {
 }
 
 
-/// @brief set width of the object
-/// @param w width 
+/// @brief set base of the object
+/// @param b base 
 void IsoTriangle::SetBase(float b) {
 
 	if (b < 0.) {
@@ -198,8 +196,8 @@ void IsoTriangle::SetBase(float b) {
 
 }
 
-/// @brief set length of the object
-/// @param l length 
+/// @brief set height of the object
+/// @param h height 
 void IsoTriangle::SetHeight(float h) {
 
 	if (h < 0.) {
@@ -211,7 +209,7 @@ void IsoTriangle::SetHeight(float h) {
 
 }
 
-/// @brief set width and length of the object
+/// @brief set base and height of the object
 /// @param b base 
 /// @param h height 
 void IsoTriangle::SetDim(float b, float h) {
@@ -236,9 +234,9 @@ float IsoTriangle::GetHeight() {
 	return height;
 }
 
-/// @brief get width and length of the object
-/// @param w width 
-/// @param l length
+/// @brief get base and height of the object
+/// @param b base
+/// @param h height
 void IsoTriangle::GetDim(float& b, float& h) {
 
 	b = base;
@@ -248,10 +246,9 @@ void IsoTriangle::GetDim(float& b, float& h) {
 }
 
 /// @brief get width and length of the object
-/// @param w width 
-/// @param l length
+/// @return side 
 float IsoTriangle::GetSide() {
 
 
-	return sqrt(pow(base/2, 2) + pow(height, 2));
+	return sqrt(pow(base / 2, 2) + pow(height, 2));
 }
